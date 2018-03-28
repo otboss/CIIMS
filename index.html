@@ -1,3 +1,4 @@
+<!DOCTYPE html>
  <html>
     <head>
         <style type="text/css">
@@ -56,6 +57,11 @@
                 background-color: #F9F9F9; 
                 color: gray; 
                 border: 1px solid lightgray;
+                
+            }
+            
+            .filterboxes:hover{
+                background-color: #F3F3F3;
             }
             
             .fileDescription{
@@ -63,13 +69,20 @@
             }
             
         </style>
-        <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+        <!--<script src="jquery-1.11.1.min.js" type="text/javascript"></script>-->
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+        <script src="jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
         <script type="text/javascript">
             //INSERT JAVASCRIPT HERE
+            
+            window.onload = function(){
+                $( "#datepicker" ).datepicker();
+            }
         </script>        
     </head>
     
-    <body>
+    <body style="min-width: 500px;">
         <header class="col-12">
             <div style="float: left; padding: 20px 0 0 20px;">
                 <span style="color: white; font-size: 26px;">CIIMS</span>
@@ -77,20 +90,48 @@
         </header>
         <section class="col-12">
             
-            <aside style="float: left; width: 15%; height: calc(100vh - 80px); background-color: #DEDEDE;">
-            
+            <aside style="float: left; width: 15%; height: calc(100vh - 80px); background-color: ; /*border-right: 1px solid #5ED1B0;*/">
+                <table class="col-12">
+                    <tr>
+                        <td style="padding: 20px 0 0 10px; color: darkgray;">
+                            <img style="width: 30px; height: 30px;" src="logo.png">
+                        </td>
+                        <td style="padding: 20px 0 0 0px; color: darkgray;">
+                            <span>Institution Name</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0 0 10px; color: darkgray; cursor: pointer;">
+                            <img style="width: 25px; height: 25px;" src="folder.png">
+                        </td>
+                        <td style="padding: 0px 0 0 0px; color: darkgray; font-size: 14px; cursor: pointer;">
+                            <span>Files</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0px 0 0 10px; color: darkgray; cursor: pointer;">
+                            <img style="width: 25px; height: 25px;" src="staff.png">
+                        </td>
+                        <td style="padding: 0px 0 0 0px; color: darkgray; font-size: 14px; cursor: pointer;">
+                            <span>Staff</span>
+                        </td>
+                    </tr>
+                </table>
             </aside>
             
 
-            <div style="float: left; width: 85%; height: calc(100vh - 120px); padding: 10px 0 0 0; overflow-y: auto; overflow-x: hidden;">
+            <div style="float: left; width: 85%; height: calc(100vh - 80px); padding: 10px 0 0 0; overflow-y: auto; overflow-x: hidden;">
                 <div style="float: left; width: 100%; min-height: 40px; /*border-bottom: 1px solid #5ED1B0;*/ text-align: center;">
                     <!--FILTER AREA-->
                     <input class="filterboxes" placeholder="File Name">
-                    <input class="filterboxes" placeholder="Date">
+                    <input class="filterboxes" placeholder="Date" id="datepicker">
                     <input class="filterboxes" placeholder="Uploader">
-                    <input class="filterboxes" placeholder="" style="background-color: #5ED1B0; cursor: default; color: white;" value="Jamaica" disabled>
-                    <div style="display: inline-block; width: 180px; margin: 15px 0 15px 10px; text-align: left;">
-                        <input class="filterboxes" placeholder="" style="margin: 0; float: ;  background-color: #5ED1B0; cursor: default; color: white; text-align: center; width: 60px;" value="Go" disabled>
+                    <div style="display: inline-block; background-color: white;">
+                        <input class="filterboxes" placeholder="" style="background-color: #5ED1B0; cursor: default; color: white;" value="Jamaica" disabled>
+                    </div>
+                    
+                    <div style="display: none; /*display: inline-block;*/ width: 180px; margin: 15px 0 15px 10px; text-align: left;">
+                        <input class="filterboxes" placeholder="" style="margin: 0; float: ;  background-color: #5ED1B0; cursor: default; color: white; text-align: center; width: 60px; cursor: pointer;" value="Go" disabled>
                     </div>
                     
                 </div>                
