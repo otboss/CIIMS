@@ -34,6 +34,34 @@
             body{
                 margin: 0;
             }
+            
+            input{
+                padding: 3px 5px;
+            }
+            
+            .files{
+                border: 1px solid lightgray;
+                display: inline-block;
+                width: 250px; 
+                height: 160px; 
+                margin: 10px 10px 20px 10px;
+                color: gray;
+                cursor: pointer;
+            }
+            
+            .filterboxes{
+                margin: 5px 0 0 10px; 
+                width: 180px; 
+                height: 26px;
+                background-color: #F9F9F9; 
+                color: gray; 
+                border: 1px solid lightgray;
+            }
+            
+            .fileDescription{
+                position: absolute; bottom: 0; padding: 0 8px 8px 0; width: 100%; text-align: right; font-size: 10px;
+            }
+            
         </style>
         <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
         <script type="text/javascript">
@@ -43,15 +71,29 @@
     
     <body>
         <header class="col-12">
-        
+            <div style="float: left; padding: 20px 0 0 20px;">
+                <span style="color: white; font-size: 26px;">CIIMS</span>
+            </div>
         </header>
         <section class="col-12">
             
-            <aside style="float: left; width: 15%; height: calc(100vh - 100px); background-color: #DEDEDE;">
+            <aside style="float: left; width: 15%; height: calc(100vh - 80px); background-color: #DEDEDE;">
             
             </aside>
             
-            <div style="float: left; width: 85%; height: calc(100vh - 100px); overflow-y: auto; overflow-x: hidden;">
+
+            <div style="float: left; width: 85%; height: calc(100vh - 120px); padding: 10px 0 0 0; overflow-y: auto; overflow-x: hidden;">
+                <div style="float: left; width: 100%; min-height: 40px; /*border-bottom: 1px solid #5ED1B0;*/ text-align: center;">
+                    <!--FILTER AREA-->
+                    <input class="filterboxes" placeholder="File Name">
+                    <input class="filterboxes" placeholder="Date">
+                    <input class="filterboxes" placeholder="Uploader">
+                    <input class="filterboxes" placeholder="" style="background-color: #5ED1B0; cursor: default; color: white;" value="Jamaica" disabled>
+                    <div style="display: inline-block; width: 180px; margin: 15px 0 15px 10px; text-align: left;">
+                        <input class="filterboxes" placeholder="" style="margin: 0; float: ;  background-color: #5ED1B0; cursor: default; color: white; text-align: center; width: 60px;" value="Go" disabled>
+                    </div>
+                    
+                </div>                
                 <table style="float: left; width: 90%; margin-left: 5%; color: #5ED1B0;">
                     <thead>
                         <tr>
@@ -72,20 +114,50 @@
                     </thead>
                 </table>
                 
-                <div style="float: left; width: 90%; margin: 10px 0 0 5%; text-align: left;">
-                    <div style="display: inline-block; border: 1px solid; width: 250px; height: 160px; margin: 10px;">
-                        file 1
+                <div style="float: left; width: 90%; margin: 10px 0 0 5%; text-align: center;">
+                    <div class="files" style="position: relative;">
+                        <span>file 1</span>
+                        <div class="fileDescription" style="">
+                            <span>shared by: <i>sharer</i></span><br>
+                            <span>uploaded: <i>date</i></span><br>
+                            <span>type: <i>date</i></span>
+                        </div>
                     </div>
-                    <div style="display: inline-block; border: 1px solid; width: 250px; height: 160px; margin: 10px;">
-                        file 2
+                    <div class="files" style="position: relative;">
+                        <span>file 1</span>
+                        <div class="fileDescription" style="">
+                            <span>shared by: <i>sharer</i></span><br>
+                            <span>uploaded: <i>date</i></span><br>
+                            <span>type: <i>date</i></span>
+                        </div>
                     </div>
-                    <div style="display: inline-block; border: 1px solid; width: 250px; height: 160px; margin: 10px;">
-                        file 3
+                    <div class="files" style="position: relative;">
+                        <span>file 1</span>
+                        <div class="fileDescription" style="">
+                            <span>shared by: <i>sharer</i></span><br>
+                            <span>uploaded: <i>date</i></span><br>
+                            <span>type: <i>date</i></span>
+                        </div>
                     </div>
-                    <div style="display: inline-block; border: 1px solid; width: 250px; height: 160px; margin: 10px;">
-                        file 4
+                    <div class="files" style="position: relative;">
+                        <span>file 1</span>
+                        <div class="fileDescription" style="">
+                            <span>shared by: <i>sharer</i></span><br>
+                            <span>uploaded: <i>date</i></span><br>
+                            <span>type: <i>date</i></span>
+                        </div>
                     </div>
-                </div><table style="float: left; width: 90%; margin-left: 5%; color: #5ED1B0;">
+                    <div class="files" style="position: relative;">
+                        <span>file 1</span>
+                        <div class="fileDescription" style="">
+                            <span>shared by: <i>sharer</i></span><br>
+                            <span>uploaded: <i>date</i></span><br>
+                            <span>type: <i>date</i></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <table style="float: left; width: 90%; margin-left: 5%; color: #5ED1B0;">
                     <thead>
                         <tr>
                             <td style="width: 40%;">
@@ -94,7 +166,7 @@
                                 </div>
                             </td>
                             <td style="text-align: center; font-size: 22px;">
-                                <span>March 12, 2018</span>
+                                <span>March 10, 2018</span>
                             </td>
                             <td style="width: 40%;">
                                 <div style="height: 100%;">
@@ -105,20 +177,48 @@
                     </thead>
                 </table>
                 
-                <div style="float: left; width: 90%; margin: 10px 0 0 5%; text-align: left;">
-                    <div style="display: inline-block; border: 1px solid; width: 250px; height: 160px; margin: 10px;">
-                        file 1
+                <div style="float: left; width: 90%; margin: 10px 0 0 5%; text-align: center;">
+                    <div class="files" style="position: relative;">
+                        <span>file 1</span>
+                        <div class="fileDescription" style="">
+                            <span>shared by: <i>sharer</i></span><br>
+                            <span>uploaded: <i>date</i></span><br>
+                            <span>type: <i>date</i></span>
+                        </div>
                     </div>
-                    <div style="display: inline-block; border: 1px solid; width: 250px; height: 160px; margin: 10px;">
-                        file 2
+                    <div class="files" style="position: relative;">
+                        <span>file 1</span>
+                        <div class="fileDescription" style="">
+                            <span>shared by: <i>sharer</i></span><br>
+                            <span>uploaded: <i>date</i></span><br>
+                            <span>type: <i>date</i></span>
+                        </div>
                     </div>
-                    <div style="display: inline-block; border: 1px solid; width: 250px; height: 160px; margin: 10px;">
-                        file 3
+                    <div class="files" style="position: relative;">
+                        <span>file 1</span>
+                        <div class="fileDescription" style="">
+                            <span>shared by: <i>sharer</i></span><br>
+                            <span>uploaded: <i>date</i></span><br>
+                            <span>type: <i>date</i></span>
+                        </div>
                     </div>
-                    <div style="display: inline-block; border: 1px solid; width: 250px; height: 160px; margin: 10px;">
-                        file 4
+                    <div class="files" style="position: relative;">
+                        <span>file 1</span>
+                        <div class="fileDescription" style="">
+                            <span>shared by: <i>sharer</i></span><br>
+                            <span>uploaded: <i>date</i></span><br>
+                            <span>type: <i>date</i></span>
+                        </div>
                     </div>
-                </div>
+                    <div class="files" style="position: relative;">
+                        <span>file 1</span>
+                        <div class="fileDescription" style="">
+                            <span>shared by: <i>sharer</i></span><br>
+                            <span>uploaded: <i>date</i></span><br>
+                            <span>type: <i>date</i></span>
+                        </div>
+                    </div>
+                </div>  
                 
             </div>
             
