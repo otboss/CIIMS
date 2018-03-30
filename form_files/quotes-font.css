@@ -1,0 +1,74 @@
+@font-face {
+	font-family: 'QuotesFont';
+	src:url('../font/QuotesFont.eot?-7avhmg');
+	src:url('../font/QuotesFont.woff?-7avhmg') format('woff'),
+		url('../font/QuotesFont.eot?#iefix-7avhmg') format('embedded-opentype'),
+		url('../font/QuotesFont.ttf?-7avhmg') format('truetype'),
+		url('../font/QuotesFont.svg?-7avhmg#QuotesFont') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'QuotesFont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-z:before {
+	content: "\21";
+}
+.icon-y:before {
+	content: "\22";
+}
+.icon-e:before {
+	content: "\23";
+}
+.icon-x:before {
+	content: "\24";
+}
+.icon-w:before {
+	content: "\25";
+}
+.icon-a:before {
+	content: "\26";
+}
+.icon-t:before {
+	content: "\27";
+}
+.icon-s:before {
+	content: "\28";
+}
+.icon-p:before {
+	content: "\29";
+}
+.icon-X:before {
+	content: "\2a";
+}
+.icon-O:before {
+	content: "\2b";
+}
+.icon-d:before {
+	content: "\2c";
+}
+.icon-A:before {
+	content: "\2d";
+}
+.icon-C:before {
+	content: "\2e";
+}
+.icon-c:before {
+	content: "\2f";
+}
+.icon-W:before {
+	content: "\30";
+}

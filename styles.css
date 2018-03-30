@@ -1,0 +1,87 @@
+* { 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing:border-box
+}
+[class*="col-"] {
+    float: left;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+       
+span{
+    font-family: arial;
+}
+
+header{
+    height: 80px;
+    background-color: #5ED1B0;
+}
+
+body{
+    margin: 0;
+}
+
+input{
+    padding: 3px 5px;
+    background-color: #F9F9F9;
+    border: 1px solid lightgray;
+}
+
+.files{
+    border: 1px solid lightgray;
+    display: inline-block;
+    width: 250px; 
+    height: 160px; 
+    margin: 10px 10px 20px 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.filterboxes{
+    margin: 5px 0 0 10px; 
+    width: 180px; 
+    height: 26px;
+    background-color: #F9F9F9; 
+    color: gray; 
+    border: 1px solid lightgray;
+    
+}
+
+.filterboxes:hover{
+    background-color: #F3F3F3;
+}
+
+.fileDescription{
+    position: absolute; bottom: 0; padding: 0 8px 8px 0; width: 100%; text-align: right; font-size: 10px;
+}
+
+.countryTableRows{
+    border: 1px solid #EBEBEB; 
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+.countryTableRows:hover{
+    background-color: #F5F5F5;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+}
+
+.hoverline:hover{
+    text-decoration: underline;
+}

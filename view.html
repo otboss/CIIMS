@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Intro to MapView - Create a 2D map</title>
+<link rel = "stylesheet" type = "text/css" href= "styles.css" /> 
+<style>
+  html, body, #viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .detailsTable td{
+      /*text-align: center;*/
+      width: 25%;
+      color: gray;
+      padding: 10px 8px;
+      border: 1px solid gray;
+      
+  }
+</style>
+<link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+<script src="https://js.arcgis.com/4.6/"></script>
+<script>
+require([
+  "esri/Map",
+  "esri/views/MapView",
+  "dojo/domReady!"
+], function(Map, MapView){
+  var map = new Map({
+    basemap: "streets"
+  });
+  var view = new MapView({
+    container: "viewDiv",  // Reference to the scene div created in step 5
+    map: map,  // Reference to the map object created before the scene
+    zoom: 11,  // Sets zoom level based on level of detail (LOD)
+    center: [-62.722755, 17.298729]  // Sets center point of view using longitude,latitude
+  });
+});
+</script>
+</head>
+<body>
+    <header class="col-12">
+        <div style="float: left; padding: 20px 0 0 20px;">
+            <a href="index.html"><span style="color: white; font-size: 26px;">CIIMS</span></a>
+        </div>
+        
+        <div style="float: right; margin: 12px 30px 0 0; color: white;">
+            <table style="width: 130px;">
+                <tr>
+                    <td style="width: 30%; padding: 0;">
+                        <div style="text-align: center; border: 2px solid lightgray; border-radius: 100px; background-color: white;">
+                            <img src="staff.png" style=" width: 24px; height: 24px; margin: 2px 3px; ">
+                        </div>
+                        
+                    </td>
+                    <td style="">
+                        <span style="">My Account</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                     
+                    </td>
+                    <td style="padding: 0;">
+                        <a href="login.html">
+                            <span class="hoverline" style="font-size: 14px; float: left; cursor: pointer; color: white; padding: 0 15px; margin: -7px 0 0 0;">Sign Out</span>
+                        </a>                            
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>   
+    <section class="col-12">
+        <div style="color: #5ED1B0; font-size: 26px; margin: 10px 0 10px 30px; font-family: arial;">File Name</div>
+        <div class="col-12" style="text-align: center; height: 310px; padding: 10px 0; border-top: 1px solid #5ED1B0; border-bottom: 1px solid #5ED1B0; background-color: #F8F8F8;">
+            <div id="mapContainer" style="width: 450px; height: 290px; display: inline-block;">
+                <div id="viewDiv"></div>
+            </div>
+        </div>
+    </section>
+    <footer style="min-height: 300px; float; left; padding: 30px 0;">
+        <table class="detailsTable" style="width: 400px; border-collapse: collapse; margin: 20px 30px; float: left;">
+            <tr>
+                <td>
+                    <span>Institution</span>
+                </td>
+                <td>
+                    <span>Institution Name</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Date</span>
+                </td>
+                <td>
+                    <span>Company Name</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Format</span>
+                </td>
+                <td>
+                    <span>File Format</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Region</span>
+                </td>
+                <td>
+                    <span>Region Name</span>
+                </td>
+            </tr>
+        </table>
+        
+        <table style="margin: 20px 40px; text-align: center; font-family: arial; float: right; width: 200px; border: 1px solid lightgray; background-color: #5ED1B0; color: white; padding: 8px 10px; border-radius: 5px;">
+            <tr>
+                <td style="text-align: center; width: 17%;">
+                    <img src="download.png" style="width: 20px; height: 20px;">
+                </td>
+                <td style="text-align: center;">
+                    Download
+                </td>
+            </tr>
+        </table>        
+    </footer>     
+  
+</body>
+</html>

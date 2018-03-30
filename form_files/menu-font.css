@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'MenuFonts';
+	src:url('../font/MenuFonts.eot?-i9q3ja');
+	src:url('../font/MenuFonts.eot?#iefix-i9q3ja') format('embedded-opentype'),
+		url('../font/MenuFonts.woff?-i9q3ja') format('woff'),
+		url('../font/MenuFonts.ttf?-i9q3ja') format('truetype'),
+		url('../font/MenuFonts.svg?-i9q3ja#MenuFonts') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" menu-"] {
+	font-family: 'MenuFonts';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	margin-right: 3px;
+	position: relative;
+	text-transform: none;
+}
+.menu-profile{
+	top: -1.2px;
+}
+.menu-profile:before {
+	content: "\e600";
+	font-size: 12px;
+
+}
+.menu-car{
+	top: -0.5px;
+}
+.menu-car:before {
+	content: "\e605";
+	font-size: 12px;
+}
+.menu-messages{
+	top: -0.5px;
+}
+.menu-messages:before {
+	content: "\e601";
+	font-size: 11px;
+}
+.menu-payments{
+	top: 1px;
+}
+.menu-payments:before {
+	content: "\e602";
+	font-size: 14px;
+}
+.menu-claims{
+	top: 1.4px;
+}
+.menu-claims:before {
+	content: "\e603";
+	font-size: 15px;
+}
+.menu-quotes{
+	top: 1px;
+}
+.menu-quotes:before {
+	content: "\e604";
+	font-size: 14px;
+}
+.glyphicon-remove-circle {
+	top: 1.4px !important;
+}

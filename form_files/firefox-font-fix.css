@@ -1,0 +1,51 @@
+@-moz-document url-prefix() { 
+	@font-face {
+        font-family: 'QuotesFont';
+        src:url('../font/QuotesFont.woff');
+        src:url('../font/QuotesFont.eot?#iefix-7avhmg') format('embedded-opentype'),
+            url('../font/QuotesFont.woff?-7avhmg') format('woff'),
+            url('../font/QuotesFont.ttf?-7avhmg') format('truetype')
+            url('../font/QuotesFont.svg?-7avhmg#QuotesFont') format('svg');
+
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+		font-family: 'MenuFonts';
+		src:url('../font/MenuFonts.woff');
+		src:url('../font/MenuFonts.eot?#iefix-i9q3ja') format('embedded-opentype'),
+			url('../font/MenuFonts.woff?-i9q3ja') format('woff'),
+			url('../font/MenuFonts.ttf?-i9q3ja') format('truetype')
+			url('../font/MenuFonts.svg?-i9q3ja#MenuFonts') format('svg');
+		
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'PaymentsFont';
+		src:url('../font/PaymentsFont.woff');
+		src:url('../font/PaymentsFont.eot?#iefixqn0ic4') format('embedded-opentype'),
+			url('../font/PaymentsFont.woff?qn0ic4') format('woff'),
+			url('../font/PaymentsFont.ttf?qn0ic4') format('truetype')
+			url('../font/PaymentsFont.svg?qn0ic4#PaymentsFont') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+
+	@font-face {
+		font-family: 'accident-sketch';
+		src:url('../font/accident-sketch.woff');
+		src:url('../font/accident-sketch.eot?#iefix-id1jlk') format('embedded-opentype'),
+			url('../font/accident-sketch.woff?-id1jlk') format('woff'),
+			url('../font/accident-sketch.ttf?-id1jlk') format('truetype')
+			url('../font/accident-sketch.svg?-id1jlk#accident-sketch') format('svg');
+			
+		font-weight: normal;
+		font-style: normal;
+	}
+
+
+}
