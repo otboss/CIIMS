@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Intro to MapView - Create a 2D map</title>
+<title>CIIMS - View File</title>
 <link rel = "stylesheet" type = "text/css" href= "styles.css" /> 
 <style>
   html, body, #viewDiv {
@@ -75,7 +75,29 @@ require([
         </div>
     </header>   
     <section class="col-12">
-        <div style="color: #5ED1B0; font-size: 26px; margin: 10px 0 10px 30px; font-family: arial;">File Name</div>
+        <div style="color: #5ED1B0; float: left; font-size: 26px; margin: 10px 0 10px 30px; font-family: arial;">File Name</div>
+        <div style="float: right; background-color: #5DCBAB; border: 2px solid lightgray; color: white; border-radius: 5px; margin: 10px 10px 0 0; width: 180px;">
+            <table style="width: 100%; margin: 0px 15px;">
+                <tr>
+                    <td style="text-align: left; width: 40%;">
+                        <select style="width: 100%; background-color: transparent; border: none; color: white;">
+                            <option>Raw</option>
+                            <option>CSV</option>
+                            <option>ASCII</option>
+                            <option>ODF</option>
+                            <option>JSON</option>
+                            <option>XLSX</option>
+                        </select>
+                    </td>
+                    <td style="text-align: left; padding: 0 5px;">
+                        Download
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="float: right; background-color: ; color: #5DCBAB; border-radius: 5px; margin: 10px 5px 0 0;">
+
+        </div>
         <div class="col-12" style="text-align: center; height: 310px; padding: 10px 0; border-top: 1px solid #5ED1B0; border-bottom: 1px solid #5ED1B0; background-color: #F8F8F8;">
             <div id="mapContainer" style="width: 450px; height: 290px; display: inline-block;">
                 <div id="viewDiv"></div>
@@ -83,7 +105,16 @@ require([
         </div>
     </section>
     <footer style="min-height: 300px; float; left; padding: 30px 0;">
-        <table class="detailsTable" style="width: 400px; border-collapse: collapse; margin: 20px 30px; float: left;">
+       <div style="float: left; width: 60%; height: ; margin: 20px 0 0 40px;">
+            <span style="font-size: 20px; color: #383838;">Description</span>
+            <br>
+            <br>
+            <span style="padding: 15px 0 0 10px; color: #383838;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+
+Curabitur sodales ligula in libero. 
+</span>
+        </div>        
+        <table class="detailsTable" style="width: 30%; border-collapse: collapse; margin: 20px 30px; float: left;">
             <tr>
                 <td>
                     <span>Institution</span>
@@ -105,7 +136,7 @@ require([
                     <span>Format</span>
                 </td>
                 <td>
-                    <span>File Format</span>
+                    <span>Shapefile</span>
                 </td>
             </tr>
             <tr>
@@ -117,17 +148,6 @@ require([
                 </td>
             </tr>
         </table>
-        
-        <table style="margin: 20px 40px; text-align: center; font-family: arial; float: right; width: 200px; border: 1px solid lightgray; background-color: #5ED1B0; color: white; padding: 8px 10px; border-radius: 5px;">
-            <tr>
-                <td style="text-align: center; width: 17%;">
-                    <img src="download.png" style="width: 20px; height: 20px;">
-                </td>
-                <td style="text-align: center;">
-                    Download
-                </td>
-            </tr>
-        </table>        
     </footer>     
   
 </body>

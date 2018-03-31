@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href= "styles.css" />    
+        <style type="text/css">
+                
+
+            .staffIcon:hover{
+                text-decoration: underline;
+                text-decoration-color: gray;
+                cursor: pointer;
+            }
+        </style>
+        <!--<script src="jquery-1.11.1.min.js" type="text/javascript"></script>-->
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+        <script src="jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            //INSERT JAVASCRIPT HERE
+            
+            window.onload = function(){
+                $( "#datepicker" ).datepicker();
+                $( "#datepicker2" ).datepicker();
+            }
+            
+            toggleCountryDropdown = function(){
+                if($("#countryDropdownList").css('display') == "inline-block")
+                    $("#countryDropdownList").css('display', 'none');
+                else
+                    $("#countryDropdownList").css('display', 'inline-block');
+            }   
+            
+        </script>        
+    </head>
+    
+    <body style="min-width: 500px;">
+        <header class="col-12">
+            <div style="float: left; padding: 20px 0 0 20px;">
+                <a href="index.html"><span style="color: white; font-size: 26px;">CIIMS</span></a>
+            </div>
+            
+            <div style="float: right; margin: 12px 30px 0 0; color: white;">
+                <table style="width: 130px;">
+                    <tr>
+                        <td style="width: 30%; padding: 0;">
+                            <div style="text-align: center; border: 2px solid lightgray; border-radius: 100px; background-color: white;">
+                                <img src="staff.png" style=" width: 24px; height: 24px; margin: 2px 3px; ">
+                            </div>
+                            
+                        </td>
+                        <td style="">
+                            <span style="">My Account</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                         
+                        </td>
+                        <td style="padding: 0;">
+                            <a href="login.html">
+                                <span class="hoverline" style="font-size: 14px; float: left; cursor: pointer; color: white; padding: 0 15px; margin: -7px 0 0 0;">Sign Out</span>
+                            </a>                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </header>
+        <section class="col-12">
+            <div class="col-12" style="padding: 30px 50px;">
+                <div style="color: #5ED1B0; font-size: 24px; padding: 10px 0;">Manage Permissions</div>
+
+            </div>
+            
+            <table style="width: 90%; margin: 10px 0 0 5%; text-align: center; color: #5ED1B0;">
+                <thead style="font-size: 18px;">
+                    <tr>
+                        <td style="width: 20%; padding: 10px 0;">
+                            <span>Employee</span>
+                        </td>
+                        <td>
+                            <span>Upload Files</span>
+                        </td>
+                        <td>
+                            <span>Remove Files</span>
+                        </td>
+                        <td>
+                            <span>Publish Files</span>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <table class="staffIcon" style="display: inline-block; margin: 0 15px;">
+                                <tr>
+                                    <td>
+                                        <div style="border: 1px solid #CDCDCD; text-align: center; width: 100px; padding: 10px 0; height: 100px; display: inline-block; position: relative; border-radius: 2000px;">
+                                            <img src="staff.png" style="width: 70%; height: 100%;">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center; color: gray;">
+                                        <span>Sue</span>
+                                    </td>
+                                </tr>
+                            </table>    
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>                
+                
+                    <tr>
+                        <td>
+                            <table class="staffIcon" style="display: inline-block; margin: 0 15px;">
+                                <tr>
+                                    <td>
+                                        <div style="border: 1px solid #CDCDCD; text-align: center; width: 100px; padding: 10px 0; height: 100px; display: inline-block; position: relative; border-radius: 2000px;">
+                                            <img src="staff.png" style="width: 70%; height: 100%;">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center; color: gray;">
+                                        <span>Mary</span>
+                                    </td>
+                                </tr>
+                            </table>    
+                        </td>
+                        <td>
+                            <input type="checkbox" style="width: 30px; height: 30px;">
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>                
+                
+                    <tr>
+                        <td>
+                            <table class="staffIcon" style="display: inline-block; margin: 0 15px;">
+                                <tr>
+                                    <td>
+                                        <div style="border: 1px solid #CDCDCD; text-align: center; width: 100px; padding: 10px 0; height: 100px; display: inline-block; position: relative; border-radius: 2000px;">
+                                            <img src="staff.png" style="width: 70%; height: 100%;">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center; color: gray;">
+                                        <span>Mark</span>
+                                    </td>
+                                </tr>
+                            </table>    
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>                
+                
+                    <tr>
+                        <td>
+                            <table class="staffIcon" style="display: inline-block; margin: 0 15px;">
+                                <tr>
+                                    <td>
+                                        <div style="border: 1px solid #CDCDCD; text-align: center; width: 100px; padding: 10px 0; height: 100px; display: inline-block; position: relative; border-radius: 2000px;">
+                                            <img src="staff.png" style="width: 70%; height: 100%;">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center; color: gray;">
+                                        <span>John</span>
+                                    </td>
+                                </tr>
+                            </table>    
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>                
+                
+                </tbody>
+                
+            </table>
+            <div class="col-12" style="padding: 30px 30px; background-color: #5ED1B0; margin: 10px 0 0 0;">
+                <button style="float: right; color: white; background-color: #383838; border: 2px solid lightgray; padding: 5px 10px; border-radius: 5px;">Apply Changes</button>
+            </div>
+        </section>
+    </body>
+</html>
