@@ -21,6 +21,12 @@
             window.onload = function(){
                 $( "#datepicker" ).datepicker();
                 $( "#datepicker2" ).datepicker();
+                
+                if(!window.sessionStorage['intro']){
+                    alert("Welcome to the CIIMS Prototype build. Please refer to the SRS Document provided for assistance");
+                    window.sessionStorage['intro'] = 1;
+                }
+                
             }
             
             toggleCountryDropdown = function(){
