@@ -23,6 +23,13 @@
                 $( "#datepicker" ).datepicker();
                 $( "#datepicker2" ).datepicker();
                 //alert("Only administrators can see the manage permissions link shown beside the staff heading");
+                
+                $(".files").mouseover(function(){
+                   $(this).find("input").css('display', '') 
+                });    
+                $(".files").mouseleave(function(){
+                   $(this).find("input").css('display', 'none') 
+                });                
             }
             
             toggleCountryDropdown = function(){
@@ -32,6 +39,7 @@
                     $("#countryDropdownList").css('display', 'inline-block');
             }   
             
+
         </script>        
     </head>
     
@@ -271,49 +279,57 @@
                 <div style="float: left; width: 90%; margin: 10px 0 0 5%; text-align: center;">
 
                     <a href="view.html">
-                        <div class="files" style="position: relative;">
-                            <span>file 1</span>
-                            <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
-                            <div class="fileDescription" style="">
-                                <span>shared by: <i>sharer</i></span><br>
-                                <span>uploaded: <i>date</i></span><br>
-                                <span>type: <i>date</i></span>
-                            </div>
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
                         </div>
-                    </a>
+                    </a>    
+
                     <a href="view.html">
-                        <div class="files" style="position: relative;">
-                            <span>file 1</span>
-                            <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
-                            <div class="fileDescription" style="">
-                                <span>shared by: <i>sharer</i></span><br>
-                                <span>uploaded: <i>date</i></span><br>
-                                <span>type: <i>date</i></span>
-                            </div>
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
                         </div>
-                    </a>
+                    </a>    
+
                     <a href="view.html">
-                        <div class="files" style="position: relative;">
-                            <span>file 1</span>
-                            <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
-                            <div class="fileDescription" style="">
-                                <span>shared by: <i>sharer</i></span><br>
-                                <span>uploaded: <i>date</i></span><br>
-                                <span>type: <i>date</i></span>
-                            </div>
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
                         </div>
-                    </a>
+                    </a>    
+
                     <a href="view.html">
-                        <div class="files" style="position: relative;">
-                            <span>file 1</span>
-                            <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
-                            <div class="fileDescription" style="">
-                                <span>shared by: <i>sharer</i></span><br>
-                                <span>uploaded: <i>date</i></span><br>
-                                <span>type: <i>date</i></span>
-                            </div>
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
                         </div>
-                    </a>
+                    </a>    
+
 
                 </div>
                 
@@ -339,72 +355,104 @@
                 
                 <div style="float: left; width: 90%; margin: 10px 0 0 5%; text-align: center;">
 
+
                     <a href="view.html">
-                        <div class="files" style="position: relative;">
-                            <span>file 1</span>
-                            <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
-                            <div class="fileDescription" style="">
-                                <span>shared by: <i>sharer</i></span><br>
-                                <span>uploaded: <i>date</i></span><br>
-                                <span>type: <i>date</i></span>
-                            </div>
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
                         </div>
-                    </a>
+                    </a>   
                     <a href="view.html">
-                        <div class="files" style="position: relative;">
-                            <span>file 1</span>
-                            <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
-                            <div class="fileDescription" style="">
-                                <span>shared by: <i>sharer</i></span><br>
-                                <span>uploaded: <i>date</i></span><br>
-                                <span>type: <i>date</i></span>
-                            </div>
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
                         </div>
-                    </a>
+                    </a>   
                     <a href="view.html">
-                        <div class="files" style="position: relative;">
-                            <span>file 1</span>
-                            <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
-                            <div class="fileDescription" style="">
-                                <span>shared by: <i>sharer</i></span><br>
-                                <span>uploaded: <i>date</i></span><br>
-                                <span>type: <i>date</i></span>
-                            </div>
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
                         </div>
-                    </a>
+                    </a>   
                     <a href="view.html">
-                        <div class="files" style="position: relative;">
-                            <span>file 1</span>
-                            <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
-                            <div class="fileDescription" style="">
-                                <span>shared by: <i>sharer</i></span><br>
-                                <span>uploaded: <i>date</i></span><br>
-                                <span>type: <i>date</i></span>
-                            </div>
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
                         </div>
-                    </a>
+                    </a>   
                     <a href="view.html">
-                        <div class="files" style="position: relative;">
-                            <span>file 1</span>
-                            <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
-                            <div class="fileDescription" style="">
-                                <span>shared by: <i>sharer</i></span><br>
-                                <span>uploaded: <i>date</i></span><br>
-                                <span>type: <i>date</i></span>
-                            </div>
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
                         </div>
-                    </a>
+                    </a>   
                     <a href="view.html">
-                        <div class="files" style="position: relative;">
-                            <span>file 1</span>
-                            <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
-                            <div class="fileDescription" style="">
-                                <span>shared by: <i>sharer</i></span><br>
-                                <span>uploaded: <i>date</i></span><br>
-                                <span>type: <i>date</i></span>
-                            </div>
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
                         </div>
-                    </a>
+                    </a>   
+                    <a href="view.html">
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
+                        </div>
+                    </a>   
+                    <a href="view.html">
+                        <div class="files" style="position: relative; ">
+                            <input type="checkbox" style="position: absolute; left: 3px; top: 3px; display: none;" onclick="$(this).css('display', '')">
+                                <span>file 1</span>
+                                <img src="map.png" style="position: absolute; opacity: 0.2; left: 35px; top: 10px; width: 70%; z-index: -1; height: 80%;">
+                                <div class="fileDescription" style="">
+                                    <span>shared by: <i>sharer</i></span><br>
+                                    <span>uploaded: <i>date</i></span><br>
+                                    <span>type: <i>date</i></span>
+                                </div>   
+                        </div>
+                    </a>    
+
                 </div>  
             </div>
 
