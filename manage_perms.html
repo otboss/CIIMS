@@ -10,6 +10,10 @@
                 text-decoration-color: gray;
                 cursor: pointer;
             }
+            
+            button{
+                cursor: pointer;
+            }
         </style>
         <!--<script src="jquery-1.11.1.min.js" type="text/javascript"></script>-->
         <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
@@ -30,6 +34,21 @@
                     $("#countryDropdownList").css('display', 'inline-block');
             }   
             
+            toggle = function(){
+                if($("#mtoggle").attr('class') == "off"){
+                    $("#mtoggle").css('background-color', '#61DD52');
+                    $("#mtoggle #indicator").css('float', 'right');
+                    $("#mtoggle span").html('ON');
+                    $("#mtoggle").attr('class', 'on');
+                }
+                else{
+                    $("#mtoggle").css('background-color', '#DD5257');
+                    $("#mtoggle #indicator").css('float', 'left');
+                    $("#mtoggle span").html('OFF');
+                    $("#mtoggle").attr('class', 'off');
+                }
+            }
+            
         </script>        
     </head>
     
@@ -49,7 +68,7 @@
                             
                         </td>
                         <td style="">
-                            <span style="">My Account</span>
+                            <span style="">Administrator</span>
                         </td>
                     </tr>
                     <tr>
@@ -68,6 +87,32 @@
         <section class="col-12">
             <div class="col-12" style="padding: 30px 50px;">
                 <div style="color: #5ED1B0; font-size: 24px; padding: 10px 0;">Manage Permissions</div>
+                <div style="float: right; margin: -40px 0 0 0;">
+                    <button style="width: 110px; margin: 0 5px 0 0; height: 40px; float: left; background-color: #61DD52; color: white; border: 2px solid #EAEAEA; border-radius: 8px; padding: 5px 10px; font-size: 14px; ">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="vertical-align: center; text-align: center; font-size: 18px;">
+                                    +
+                                </td>
+                                <td style="vertical-align: center; text-align: center;">
+                                    <span>Add Staff</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </button>
+                    <button style="width: 140px; float: left; height: 40px; background-color: #DD5257; color: white; border: 2px solid #EAEAEA; border-radius: 8px; padding: 5px 10px; font-size: 14px; ">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="vertical-align: center; text-align: center;">
+                                    <img src="delete.png" style="width: 15px; height: 15px;">
+                                </td>
+                                <td style="vertical-align: center; text-align: center;">
+                                    <span>Remove Staff</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </button>
+                </div>
 
             </div>
             
@@ -205,6 +250,25 @@
                 
             </table>
             <div class="col-12" style="padding: 30px 30px; background-color: #5ED1B0; margin: 10px 0 0 0;">
+                <div style="float: left; width: 400px; color: white; margin-top: -10px;">
+                    <div class="col-12">
+                        <span style="font-size: 24px;">Master Control</span>
+                        <div id="mtoggle" class="off" onclick="toggle()" style="cursor: pointer; float: right; width: 80px; height: 27px; border: 1px solid; background-color: #DD5257;">
+                            <div id="indicator" style="float: left; width: 35px; height: 26px;  background-color: #E8E8E8;">
+                                
+                            </div>
+                            <span style="float: left; padding: 5px 6px; font-size: 14px;">OFF</span>
+                        </div>                           
+                    </div>
+                    
+                 
+                    <br>
+                    <br>
+                    <span>Enabling this option would make your server read-only from the perspective of this website. Any file submissions would have to be made on your database.</span>  
+                    <br>
+
+                </div>
+
                 <button style="float: right; color: white; background-color: #383838; border: 2px solid lightgray; padding: 5px 10px; border-radius: 5px;">Apply Changes</button>
             </div>
         </section>
