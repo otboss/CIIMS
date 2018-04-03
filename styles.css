@@ -25,7 +25,7 @@ span{
 
 header{
     height: 80px;
-    background-color: #5ED1B0;
+    background-color: #39424E;
 }
 
 body{
@@ -37,6 +37,10 @@ input{
     padding: 3px 5px;
     background-color: #F9F9F9;
     border: 1px solid lightgray;
+}
+
+button{
+    cursor: pointer;
 }
 
 .files{

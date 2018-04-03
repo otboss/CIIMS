@@ -26,6 +26,8 @@
             window.onload = function(){
                 $( "#datepicker" ).datepicker();
                 $( "#datepicker2" ).datepicker();
+                $("input:checkbox").css('width', '30px');
+                $("input:checkbox").css('height', '30px');
             }
             
             toggleCountryDropdown = function(){
@@ -54,7 +56,7 @@
     </head>
     
     <body style="min-width: 500px;">
-        <header class="col-12">
+        <header class="col-12" style="height: 80px;">
             <div style="float: left; padding: 20px 0 0 20px;">
                 <a href="index.html"><span style="color: white; font-size: 26px;">CIIMS</span></a>
             </div>
@@ -63,7 +65,7 @@
                 <table style="width: 130px;">
                     <tr>
                         <td style="width: 30%; padding: 0;">
-                            <div style="text-align: center; border: 2px solid lightgray; border-radius: 100px; background-color: white;">
+                            <div style="text-align: center; padding: 0 1px; border: 2px solid lightgray; border-radius: 100px; background-color: white;">
                                 <img src="staff.png" style=" width: 24px; height: 24px; margin: 2px 3px; ">
                             </div>
                             
@@ -87,7 +89,7 @@
         </header>
         <section class="col-12">
             <div class="col-12" style="padding: 30px 50px;">
-                <div style="color: #5ED1B0; font-size: 24px; padding: 10px 0;">Manage Permissions</div>
+                <div style="color: #39424E; font-size: 24px; padding: 10px 0;">Manage Permissions</div>
                 <div style="float: right; margin: -40px 0 0 0;">
                     <button style="width: 110px; margin: 0 5px 0 0; height: 40px; float: left; background-color: #61DD52; color: white; border: 2px solid #EAEAEA; border-radius: 8px; padding: 5px 10px; font-size: 14px; ">
                         <table style="width: 100%;">
@@ -117,7 +119,7 @@
 
             </div>
             
-            <table style="width: 90%; margin: 10px 0 0 5%; text-align: center; color: #5ED1B0;">
+            <table style="width: 90%; margin: 10px 0 0 5%; text-align: center; color: #39424E;">
                 <thead style="font-size: 18px;">
                     <tr>
                         <td style="width: 20%; padding: 10px 0;">
@@ -187,7 +189,7 @@
                             </table>    
                         </td>
                         <td>
-                            <input type="checkbox" style="width: 30px; height: 30px;">
+                            <input type="checkbox">
                         </td>
                         <td>
                             <input type="checkbox">
@@ -265,7 +267,7 @@
                 </tbody>
                 
             </table>
-            <div class="col-12" style="padding: 30px 30px; background-color: #5ED1B0; margin: 40px 0 0 0;">
+            <div class="col-12" style="padding: 30px 30px; background-color: #39424E; margin: 40px 0 0 0;">
                 <div style="float: left; width: 400px; color: white; margin-top: -10px;">
                     <div class="col-12">
                         <span style="font-size: 24px;">Master Control</span>
