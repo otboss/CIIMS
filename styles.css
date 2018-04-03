@@ -43,6 +43,10 @@ button{
     cursor: pointer;
 }
 
+table{
+    border-collapse: collapse;
+}
+
 .files{
     border: 1px solid lightgray;
     display: inline-block;
